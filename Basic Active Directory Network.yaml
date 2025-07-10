@@ -7,9 +7,9 @@ ludus:
     ip_last_octet: 11
     ram_gb: 8
     cpus: 4
-    chocolatey_ignore_checksums: true
     windows:
       sysprep: false
+      chocolatey_ignore_checksums: true
     domain:
       fqdn: ludus.domain
       role: primary-dc
@@ -22,6 +22,7 @@ ludus:
     cpus: 4
     chocolatey_ignore_checksums: true
     windows:
+      chocolatey_ignore_checksums: true
       install_additional_tools: true
       office_version: 2019
       office_arch: 64bit
