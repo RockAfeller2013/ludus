@@ -33,6 +33,7 @@ ludus:
     ip_last_octet: 1
     ram_gb: 8
     cpus: 4
+    chocolatey_ignore_checksums: true in
     linux: true
     testing:
       snapshot: false
