@@ -19,6 +19,7 @@ ludus:
     ram_gb: 8
     cpus: 4
     windows:
+      chocolatey_ignore_checksums: true
       install_additional_tools: true
       office_version: 2019
       office_arch: 64bit
