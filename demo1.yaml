@@ -29,7 +29,7 @@ ludus:
       chocolatey_packages:
         - vscodium                # An array of chocolatey package names you'd like installed on this VM. Default: none
         - firefox
-        - open-shell --params="'/StartMenu /ClassicIE /ClassicExplorer'"
+        # - open-shell --params="'/StartMenu /ClassicIE /ClassicExplorer'"
         - thunderbird
       office_version: 2013        # The Microsoft office version you would like installed on this VM (2013|2016|2019|2021). Default: undefined (don't install office)
       office_arch: 64bit          # The architecture for the Microsoft office install (64bit|32bit)
