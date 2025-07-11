@@ -30,7 +30,9 @@ ludus:
         - vscodium
         - firefox
         - thunderbird
-      office_version: 2013
+        - classic-shell
+        - sublimetext4
+      office_version: 2019
       office_arch: 64bit
       autologon_user: default.ad_domain_user
       autologon_password: default.ad_domain_user_password
