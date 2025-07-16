@@ -8,6 +8,7 @@ ludus:
     cpus: 4
     windows:
       sysprep: false
+      chocolatey_ignore_checksums: true
     domain:
       fqdn: ludus.domain
       role: primary-dc
@@ -22,6 +23,7 @@ ludus:
       install_additional_tools: true
       office_version: 2019
       office_arch: 64bit
+      chocolatey_ignore_checksums: true
     domain:
       fqdn: ludus.domain
       role: member
