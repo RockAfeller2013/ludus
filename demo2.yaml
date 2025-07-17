@@ -75,4 +75,4 @@ network:
       protocol: all
       ports: all
       action: ACCEPT
-# ver demo2 1.0
+# ver demo2 2.0
