@@ -1,5 +1,4 @@
 # yaml-language-server: $schema=https://docs.ludus.cloud/schemas/range-config.json
-
 ludus:
   - vm_name: "{{ range_id }}-DC1"
     hostname: "{{ range_id }}-DC1"
