@@ -12,7 +12,6 @@ ludus:
       chocolatey_ignore_checksums: true
       gpos:
         - disable_defender   # Create and link a GPO this disables Windows Defender for every domain joined Windows machine
-      # Added CrowdStrike sensor installation via PowerShell script
       ansible.windows.win_powershell:
         script: |
           Invoke-WebRequest -Uri "https://defense-sensor-kits-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/prodsyd/windows/installer_vista_win7_win8-64-4.0.3.2029.msi?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250718T023038Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=AKIAR5TRR7E6YGPSQHO3%2F20250718%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=42d29dd5e35edc2e7547b2e3ba596bb9badf53e5719b7c1297fb9e5bf837353b" `
@@ -86,4 +85,4 @@ network:
       ports: all
       action: ACCEPT
 
-# ver demo2 2.0
+# ver demo2 4.0
