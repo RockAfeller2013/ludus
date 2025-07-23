@@ -78,5 +78,8 @@ network:
       protocol: all
       ports: all
       action: ACCEPT
+    - name: Always Blocked Internal Network
+      always_blocked_networks:     # Define any networks that ranges should never be able to reach (i.e. the LAN where the Ludus host is located)
+      - 192.168.1.0/24             # entries must be in CIDR format
 
 # ver demo2 4.0
