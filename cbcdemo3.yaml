@@ -35,9 +35,6 @@ ludus:
         - winscp
       office_version: 2019
       office_arch: 64bit
-      custom_powershell: |
-        Invoke-WebRequest -Uri "https://defense-sensor-kits-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/prodsyd/windows/installer.msi" -OutFile "$env:TEMP\sensor.msi"
-        Start-Process msiexec -ArgumentList "/q /i `"$env:TEMP\sensor.msi`" COMPANY_CODE=ZVFJP6Q4W5IJ0MN15L95 POLICY_NAME=CBCDEMO_EDR GROUP_NAME=CBCDEMO1 /L* `"$env:TEMP\cbcinstall.log`"" -Wait
     domain:
       fqdn: ludus.domain
       role: member
