@@ -51,10 +51,12 @@ ludus:
       snapshot: false
       block_internet: false
 
-network:
-  inter_vlan_default: REJECT
+network: 
   always_blocked_networks:   # Define any networks that ranges should never be able to reach (i.e. the LAN where the Ludus host is located)
     - 192.168.1.0/24         # entries must be in CIDR format
+
+network:
+  inter_vlan_default: REJECT
   rules:
     - name: Only allow windows to kali on 443
       vlan_src: 10
