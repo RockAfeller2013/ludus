@@ -53,6 +53,7 @@ ludus:
 
 network:
   inter_vlan_default: REJECT
+  always_blocked_networks: 192.168.1.0/24   
   rules:
     - name: Only allow windows to kali on 443
       vlan_src: 10
@@ -78,7 +79,5 @@ network:
       protocol: all
       ports: all
       action: ACCEPT
-    - name: Always Blocked Internal Network
-      always_blocked_networks: 192.168.1.0/24             # entries must be in CIDR format
-
+      
 # ver demo2 4.0
