@@ -54,6 +54,8 @@ ludus:
 network:
   always_blocked_networks: 
     - 192.168.1.0/24   
+  allow_exceptions:
+    - 192.168.1.99
   inter_vlan_default: REJECT
   rules:
     - name: Only allow windows to kali on 443
