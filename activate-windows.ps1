@@ -1,4 +1,5 @@
-# iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/youruser/yourrepo/main/activate-windows.ps1')) -ProductKey "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+# iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RockAfeller2013/ludus/refs/heads/main/activate-windows.ps1')) -ProductKey "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+
 # This must be run as Administrator or it will fail.
 # Make sure your Windows version matches the license key you're using (e.g., Home, Pro, Enterprise).
 # This script does not validate the key before attempting activation. Windows itself will determine validity.
