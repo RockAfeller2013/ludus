@@ -18,5 +18,10 @@ slmgr.vbs /ipk $ProductKey
 
 Write-Output "Activating Windows..."
 slmgr.vbs /ato
+slmgr /xpr
+slmgr /dli
+slmgr /dlv
+(Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
+
 
 Write-Output "Done. You can check activation status with 'slmgr.vbs /xpr'"
