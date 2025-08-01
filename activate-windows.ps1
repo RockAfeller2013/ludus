@@ -1,4 +1,4 @@
-# iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RockAfeller2013/ludus/refs/heads/main/activate-windows.ps1')) -ProductKey "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+# Invoke-WebRequest -Uri "https://raw.githubusercontent.com/RockAfeller2013/ludus/refs/heads/main/activate-windows.ps1" -OutFile "$env:TEMP\activate.ps1"; powershell -ExecutionPolicy Bypass -File "$env:TEMP\activate.ps1" -ProductKey "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
 
 # This must be run as Administrator or it will fail.
 # Make sure your Windows version matches the license key you're using (e.g., Home, Pro, Enterprise).
